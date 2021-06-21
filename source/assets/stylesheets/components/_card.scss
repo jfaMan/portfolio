@@ -1,7 +1,19 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
+  margin: 16px;
+  padding: 16px;
+  grid-gap: 32px;
+}
+
+.card-about {
+  margin: 16px;
+  padding: 16px;
+}
+
+.card-project {
+  width: auto;
+  height: 200px;
 }
 
 @media(max-width: 992px) {
