@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
   </head>
   <body class="background-color">
-    <%= yield %>
+    <div class="content">
+      <%= yield %>
+    </div>
     <%= javascript_include_tag "bundle" %>
+    <%= partial "partials/footer" %>
   </body>
 </html>
