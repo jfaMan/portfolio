@@ -6,6 +6,7 @@ $device-silver-panel: #222;
 .device-iphone-x {
   height: 868px;
   width: 428px;
+  transform: scale(0.5) translateX(-50%) translateY(-50%) !important; 
 
   .device-frame {
     background: $device-silver-panel;
