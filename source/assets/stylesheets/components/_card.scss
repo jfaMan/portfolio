@@ -57,6 +57,16 @@
   // .cards-skills {
   //   grid-template-columns: 1fr 1fr 1fr;
   // }
+  .banner {
+    padding: 216px 0px 20px 0px;
+    .banner-text {
+      margin-left: 8px;
+      hr {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    }
+  }
   .navbar-nav {
     flex-direction: row;
     .nav-link {

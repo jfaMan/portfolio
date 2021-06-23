@@ -1,11 +1,12 @@
 .banner {
   background-size: cover;
   background-position: center;
+  height: 350px;
   padding: 200px 0px 20px 32px;
   margin: 64px 0px;
   // text-align: start;
   // display: flex;
-  // background-position: 0% 54%;
+  // background-position: 0% 50%;
 
   h1 {
     opacity: 1;
@@ -15,14 +16,15 @@
 
   h2 {
     color: white;
+    margin-top: 8px;
   }
 
   .banner-text {
-    margin-left: 32px
+    margin-left: 32px;
     // transform: rotate(-5deg);
     // position: absolute;
-    // left: 190px;
-    // top: 190px;
+    // left: 237px;
+    // bottom: 266px;
   }
 }
 
