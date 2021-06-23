@@ -57,6 +57,13 @@
   // .cards-skills {
   //   grid-template-columns: 1fr 1fr 1fr;
   // }
+  .navbar-nav {
+    flex-direction: row;
+    .nav-link {
+      padding-right: 16px;
+    }
+  }
+
   .container-iphone {
     grid-template-columns: 1fr;
   }
