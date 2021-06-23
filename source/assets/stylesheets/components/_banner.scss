@@ -2,8 +2,23 @@
   background-size: cover;
   background-position: center;
   padding: 150px 0;
-  text-align: center;
+  text-align: start;
+  display: flex;
+  background-position: 0% 54%;
+
+  h1 {
+    color: white;
+    // margin-left: 8px;
+  }
+
+  .banner-text {
+    // transform: rotate(-5deg);
+    position: absolute;
+    left: 190px;
+    top: 190px;
+  }
 }
+
 
 // .banner h1 {
 //   margin: 0;
