@@ -24,3 +24,17 @@ padding: 32px 0px;
   height: 197px;
   width: 280px;
 }
+
+.container-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  i {
+    margin-right: 8px;
+    font-size: 24px;
+  }
+}
+
+.container-btns {
+
+}

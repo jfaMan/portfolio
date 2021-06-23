@@ -1,21 +1,27 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
-  text-align: start;
-  display: flex;
-  background-position: 0% 54%;
+  padding: 200px 0px 20px 32px;
+  // text-align: start;
+  // display: flex;
+  // background-position: 0% 54%;
 
   h1 {
+    opacity: 1;
+    transition: opacity 2s linear;
+    // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+  h2 {
     color: white;
-    // margin-left: 8px;
   }
 
   .banner-text {
+    margin-left: 32px
     // transform: rotate(-5deg);
-    position: absolute;
-    left: 190px;
-    top: 190px;
+    // position: absolute;
+    // left: 190px;
+    // top: 190px;
   }
 }
 
