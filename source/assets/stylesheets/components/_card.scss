@@ -1,4 +1,4 @@
-.cards {
+.cards-skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 16px;
@@ -47,14 +47,20 @@
   }
 }
 
-@media(max-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+// @media(max-width: 992px) {
+//   .cards-skills {
+//     grid-template-columns: 1fr 1fr;
+//   }
+// }
 
 @media(max-width: 768px) {
-  .cards {
+  // .cards-skills {
+  //   grid-template-columns: 1fr 1fr 1fr;
+  // }
+  .container-iphone {
+    grid-template-columns: 1fr;
+  }
+  .container-info-project-right {
     grid-template-columns: 1fr;
   }
 }

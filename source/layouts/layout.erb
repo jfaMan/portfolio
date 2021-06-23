@@ -18,11 +18,9 @@
     <link rel="stylesheet" href="dist/devices.css">
   </head>
   <body>
-    <%= partial "partials/navbar" %>
     <div class="content bg-white">
       <%= yield %>
     </div>
     <%= javascript_include_tag "bundle" %>
-    <%= partial "partials/footer" %>
   </body>
 </html>
