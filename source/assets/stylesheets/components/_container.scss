@@ -85,6 +85,16 @@
     }
   }
 
+  .device-surface-pro {
+    height: 394px;
+    width: 561px;
+    transform: scale(0.4) translateX(-60%) translateY(-60%) !important; 
+  }
+  .container-surface-pro {
+    height: 220px;
+    width: 290px;
+  }
+
   .wrapper div:first-child {
     order: 2;
   }
