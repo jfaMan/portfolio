@@ -84,4 +84,8 @@
       width: 150px;
     }
   }
+
+  .wrapper div:first-child {
+    order: 2;
+  }
 }
