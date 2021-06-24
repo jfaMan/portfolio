@@ -58,3 +58,30 @@
 //     font-size: 64px;
 //   }
 // }
+
+@media(max-width: 768px) {
+  .container-about-tech {
+    padding-bottom: 0px;
+  }
+
+  .container-icons {
+    flex-direction: column;
+    .icons-row {
+      width: 100%;
+      margin-top: 16px;
+      i {
+        margin: auto;
+      }
+    }
+  }
+
+  .container-btns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    .btn {
+      margin: 48px 0px 0px 0px;
+      width: 150px;
+    }
+  }
+}
