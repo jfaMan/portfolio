@@ -3,10 +3,20 @@
   background-color: $black;
   color: white;
   margin-left: 16px;
+  &:hover {
+    color: white;
+    opacity: 0.15;
+    transition: opacity 0.2s ease;
+  }
 }
 .btn-pages-left {
   border-radius: 2px;
   background-color: $black;
   color: white;
   margin-right: 16px;
+  &:hover {
+    color: white;
+    opacity: 0.15;
+    transition: opacity 0.2s ease;
+  }
 }

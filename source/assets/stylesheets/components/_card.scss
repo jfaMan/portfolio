@@ -47,6 +47,26 @@
   }
 }
 
+.card-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 32px;
+    padding: 0px 10px;
+    transition: opacity 0.2s ease;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  i {
+    font-size: 32x;
+  }
+}
+
 // @media(max-width: 992px) {
 //   .cards-skills {
 //     grid-template-columns: 1fr 1fr;
