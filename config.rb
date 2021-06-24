@@ -15,6 +15,8 @@ set :js_dir,     'assets/javascripts'
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
+activate :livereload
+
 activate :autoprefixer do |config|
   config.browsers = '>0.25%, not ie 11, not op_mini all, not dead'
 end
