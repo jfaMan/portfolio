@@ -4,6 +4,7 @@
   height: 350px;
   padding: 200px 0px 20px 32px;
   margin: 64px 0px;
+  border-radius: 4px;
   // box-shadow: 32px 32px black;
   // text-align: start;
   // display: flex;
@@ -47,4 +48,10 @@
 
 .banner-text-rotate {
   transform: rotate(-10deg);
+}
+
+@media(max-width: 768px) {
+  .banner {
+    border-radius: 0px;
+  }
 }
