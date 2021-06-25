@@ -18,7 +18,7 @@
   }
 }
 
-.container-contact {
+.container-contact, .container-media {
   padding-bottom: 96px;
   text-align: center;
   h1 {
@@ -26,6 +26,9 @@
   }
   p {
     padding: 32px;
+  }
+  iframe {
+    margin-top: 32px;
   }
 }
 
@@ -100,5 +103,10 @@
 
   .wrapper div:first-child {
     order: 2;
+  }
+
+  iframe {
+    width: auto;
+    height: auto;
   }
 }
