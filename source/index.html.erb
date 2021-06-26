@@ -2,9 +2,9 @@
 <div id="banner-container" class="container">
   <%= partial "partials/banner" %>
 </div>
-<%# <div class="container-greeting">
-  <p>Welcome</p>
-</div> %>
+<script>
+  ScrollReveal().reveal('.banner-text', { delay: 800 });
+</script>
 <div class="container mt-5">
   <%= partial "partials/about" %>
   <%= partial "partials/projects" %>
