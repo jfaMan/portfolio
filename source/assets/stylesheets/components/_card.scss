@@ -37,8 +37,6 @@
 .card-project-info-right {
   width: 100%;
   margin: 0px 0px 0px 64px;
-  // border: 1px solid black;
-  // box-shadow: 10px 10px black;
   h1 {
     margin: 0px 0px 32px 0px !important;
   }
@@ -50,8 +48,17 @@
 .card-project-info-left {
   width: 100%;
   margin: 0px 64px 0px 0px;
-  // border: 1px solid black;
-  // box-shadow: 10px 10px black;
+  h1 {
+    margin: 0px 0px 32px 0px !important;
+  }
+  p {
+    margin-bottom: 24px;
+  }
+}
+
+.card-project-info-surface {
+  width: 100%;
+  margin: 0px 0px 0px 96px;
   h1 {
     margin: 0px 0px 32px 0px !important;
   }
