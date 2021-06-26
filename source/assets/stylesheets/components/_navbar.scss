@@ -1,6 +1,7 @@
 .navbar-portfolio {
   justify-content: space-between;
   background: $black;
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 5;
