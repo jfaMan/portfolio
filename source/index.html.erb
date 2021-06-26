@@ -10,26 +10,45 @@
 <%= partial "partials/contact" %>
 <%= partial "partials/footer" %>
 <script>
-  ScrollReveal({ distance: '60px' });
+  ScrollReveal().reveal('.banner-text h1', {
+    useDelay: 'onload',
+    easing: 'ease-out',
+    origin: 'left',
+    distance: '60px',
+    duration: 1200,
+    opacity: 0
+  })
+  ScrollReveal().reveal('.banner-text hr', {
+    useDelay: 'onload',
+    easing: 'ease-out',
+    delay: 2600,
+    duration: 1200,
+  })
+  ScrollReveal().reveal('.banner-text h2', {
+    useDelay: 'onload',
+    easing: 'ease-out',
+    delay: 1200,
+    duration: 1200
+  })
   ScrollReveal().reveal('.container-iphone', {
     useDelay: 'always',
-  
     reset: true,
     easing: 'ease-out',
-    origin: 'left'
+    origin: 'left',
+    distance: '60px'
   });
   ScrollReveal().reveal('.container-macbook', {
     useDelay: 'always',
-  
     reset: true,
     easing: 'ease-out',
-    origin: 'right'
+    origin: 'right',
+    distance: '60px'
   });
   ScrollReveal().reveal('.container-surface-pro', {
     useDelay: 'always',
-  
     reset: true,
     easing: 'ease-out',
-    origin: 'left'
+    origin: 'left',
+    distance: '60px'
   });
 </script>
