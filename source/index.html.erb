@@ -2,9 +2,6 @@
 <div id="banner-container" class="container">
   <%= partial "partials/banner" %>
 </div>
-<script>
-  ScrollReveal().reveal('.banner-text', { delay: 800 });
-</script>
 <div class="container mt-5">
   <%= partial "partials/about" %>
   <%= partial "partials/projects" %>
@@ -12,3 +9,27 @@
 <%= partial "partials/media" %>
 <%= partial "partials/contact" %>
 <%= partial "partials/footer" %>
+<script>
+  ScrollReveal({ distance: '60px' });
+  ScrollReveal().reveal('.container-iphone', {
+    useDelay: 'always',
+  
+    reset: true,
+    easing: 'ease-out',
+    origin: 'left'
+  });
+  ScrollReveal().reveal('.container-macbook', {
+    useDelay: 'always',
+  
+    reset: true,
+    easing: 'ease-out',
+    origin: 'right'
+  });
+  ScrollReveal().reveal('.container-surface-pro', {
+    useDelay: 'always',
+  
+    reset: true,
+    easing: 'ease-out',
+    origin: 'left'
+  });
+</script>
