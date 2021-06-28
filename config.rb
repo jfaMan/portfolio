@@ -15,10 +15,6 @@ set :js_dir,     'assets/javascripts'
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-200684147-1'
-  end
-
 activate :livereload
 
 activate :autoprefixer do |config|

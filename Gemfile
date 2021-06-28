@@ -5,7 +5,6 @@ gem 'middleman-autoprefixer'
 gem 'middleman-gh-pages'
 gem 'middleman-metaman'
 gem 'middleman-livereload'
-gem 'middleman-google-analytics'
 gem 'rake'
 gem 'rubocop'
 
