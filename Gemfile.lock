@@ -123,6 +123,8 @@ GEM
       uglifier (~> 3.0)
     middleman-gh-pages (0.4.1)
       rake (> 0.9.3)
+    middleman-google-analytics (0.1.1)
+      middleman-core (>= 3.0.6)
     middleman-livereload (3.4.7)
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
@@ -219,6 +221,7 @@ DEPENDENCIES
   middleman
   middleman-autoprefixer
   middleman-gh-pages
+  middleman-google-analytics
   middleman-livereload
   middleman-metaman
   rake
