@@ -37,10 +37,14 @@
     distance: '60px',
     duration: 700
   });
+  
+  const mobileView = window.matchMedia( "(min-width: 576px)" );
+  const leftOrRight = (!mobileView.matches) ? 'left' : 'right'
+  
   ScrollReveal().reveal('.container-macbook', {
+    origin: leftOrRight,
     reset: true,
     easing: 'ease-out',
-    origin: 'right',
     distance: '60px',
     duration: 700
   });
