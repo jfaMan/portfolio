@@ -31,7 +31,6 @@
     duration: 1200
   })
   ScrollReveal().reveal('.container-iphone', {
-    useDelay: 'always',
     reset: true,
     easing: 'ease-out',
     origin: 'left',
@@ -39,7 +38,6 @@
     duration: 700
   });
   ScrollReveal().reveal('.container-macbook', {
-    useDelay: 'always',
     reset: true,
     easing: 'ease-out',
     origin: 'right',
@@ -47,11 +45,16 @@
     duration: 700
   });
   ScrollReveal().reveal('.container-surface-pro', {
-    useDelay: 'always',
     reset: true,
     easing: 'ease-out',
     origin: 'left',
     distance: '60px',
+    duration: 700
+  });
+  ScrollReveal().reveal('.cards-skills, .card-media, .card-contact a',  {
+    useDelay: 'once',
+    reset: true,
+    easing: 'ease-out',
     duration: 700
   });
 </script>
