@@ -51,7 +51,27 @@
 }
 
 @media(max-width: 768px) {
+
+  .banner {
+    padding: 226px 0px 20px 4px;
+    .banner-text {
+      margin-left: 8px;
+      hr {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  #banner-container {
+    padding: 0px;
+    margin-top: 0px;
+  }
+}
+
+@media(max-width: 576px) {
+  
   .banner {
     border-radius: 0px;
+    margin: 0px
   }
 }

@@ -36,7 +36,11 @@ img {
 }
 
 @media(max-width: 768px) {
+  
   .nav-link {
     padding: 8px 0px 8px 16px !important;
+  }
+  .navbar-nav {
+    flex-direction: row;
   }
 }

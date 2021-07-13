@@ -100,16 +100,11 @@
   }
 }
 
-// @media(max-width: 992px) {
-//   .cards-skills {
-//     grid-template-columns: 1fr 1fr;
-//   }
-// }
-
 @media(max-width: 768px) {
-  // .cards-skills {
-  //   grid-template-columns: 1fr 1fr 1fr;
-  // }
+
+  .card-project-mirror div:first-child {
+    order: 2;
+  }
   .card-project {
     flex-direction: column;
     padding: 32px 0px 48px 0px;
@@ -122,37 +117,5 @@
     .card-about-contact {
       font-size: 19px;
     }
-  }
-  .banner {
-    padding: 226px 0px 20px 4px;
-    margin: 0px;
-    .banner-text {
-      margin-left: 8px;
-      hr {
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
-    }
-  }
-  #banner-container {
-    padding: 0px;
-    margin-top: 0px;
-
-  }
-  .navbar-nav {
-    flex-direction: row;
-    .nav-link {
-      padding-right: 16px;
-    }
-  }
-  .container {
-    margin-top: 0px !important;
-  }
-
-  .container-iphone {
-    grid-template-columns: 1fr;
-  }
-  .container-info-project-right {
-    grid-template-columns: 1fr;
   }
 }
