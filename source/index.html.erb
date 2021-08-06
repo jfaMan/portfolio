@@ -29,28 +29,24 @@
     delay: 1400,
     duration: 1200
   })
-  ScrollReveal().reveal('.container-iphone', {
-    reset: true,
-    easing: 'ease-out',
-    origin: 'left',
-    distance: '60px',
-    duration: 700
-  });
+  
+  
+  // Device movement //
   
   const mobileView = window.matchMedia( "(min-width: 576px)" );
   const leftOrRight = (!mobileView.matches) ? 'left' : 'right'
   
-  ScrollReveal().reveal('.container-macbook', {
-    origin: leftOrRight,
+  ScrollReveal().reveal('.device-origin-left', {
+    origin: 'left',
     reset: true,
     easing: 'ease-out',
     distance: '60px',
     duration: 700
   });
-  ScrollReveal().reveal('.container-surface-pro', {
+  ScrollReveal().reveal('.device-origin-right', {
+    origin: leftOrRight,
     reset: true,
     easing: 'ease-out',
-    origin: 'left',
     distance: '60px',
     duration: 700
   });
