@@ -45,7 +45,7 @@
 }
 
 @keyframes hover {
-  from { transform: translateY(0%); }
+  from { transform: translateY(100%); }
   to { transform: translateY(150%); }
 }
 
@@ -54,9 +54,9 @@
 @media(max-width: 768px) {
 
   .banner {
-    padding: 226px 0px 20px 4px;
+    padding: 226px 0px 20px 32px;
     .banner-text {
-      margin-left: 8px;
+      margin-left: 0px;
       hr {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -71,10 +71,20 @@
 
 @media(max-width: 576px) {
   .banner {
+    height: 93vh;
+    background-position: 63%;
+    padding: 0 0 0 10px;
     border-radius: 0px;
-    margin: 0px
+    margin: 0 0 200px 0;
+    .banner-text {
+      position: absolute;
+      bottom: 10%;
+    }
   }
   .arrow {
-    padding: 180px 0 140px 0;
+    padding: 0 0 0 0;
+    position: absolute;
+    bottom: 38px;
+    left: 49%;
   }
 }
