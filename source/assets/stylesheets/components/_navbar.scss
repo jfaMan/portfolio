@@ -5,29 +5,38 @@
   position: sticky;
   top: 0px;
   z-index: 5;
-  p {
-    font-size: 16px;
-    color: white;
-    margin: 8px 0px;
-    display: flex;
+  .navbar-brand img {
+    width: 112px;
+  }
+  .navbar-links-right {
+    a {
+      font-size: 16px;
+      color: white;
+      width: auto;
+    }
+  }
+}
+
+// Navbar hamburger related
+.navbar-portfolio {
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  .navbar-toggler {
+    padding-right: 0;
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+}
+
+// Media Queries
+@media (max-width: 576px) {
+    .navbar-links-right .navbar-nav {
+    flex-direction: column;
     align-items: center;
   }
-}
-
-.navbar-links-right {
-  a {
-    font-size: 16px;
-    color: white;
-    width: auto;
-  }
-}
-
-.navbar-portfolio .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-portfolio .navbar-brand img {
-  width: 112px;
+  // Comment out above to revert back to non-hamburger navbar
 }
 
 @media(max-width: 768px) {
