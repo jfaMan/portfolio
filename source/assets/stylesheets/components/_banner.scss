@@ -32,6 +32,25 @@
   transform: rotate(-10deg);
 }
 
+.arrow {
+  text-align: center;
+  padding: 64px 0 64px 0;
+  i {
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+    animation: hover 2.5S infinite;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes hover {
+  from { transform: translateY(0%); }
+  to { transform: translateY(150%); }
+}
+
+
+// Media Queries
 @media(max-width: 768px) {
 
   .banner {
@@ -51,9 +70,11 @@
 }
 
 @media(max-width: 576px) {
-  
   .banner {
     border-radius: 0px;
     margin: 0px
+  }
+  .arrow {
+    padding: 150px 0 170px 0;
   }
 }
