@@ -1,7 +1,7 @@
 .cards-skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 16px;
+  margin: 24px 16px 16px 16px;
   padding: 16px;
   grid-gap: 32px;
 }
@@ -117,5 +117,12 @@
     .card-about-contact {
       font-size: 19px;
     }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .cards-skills {
+    margin: 24px 64px 16px 64px;
+    padding: 16px 64px 16px 64px;
   }
 }
