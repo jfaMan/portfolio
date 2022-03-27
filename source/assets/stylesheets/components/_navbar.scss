@@ -9,38 +9,13 @@
   .navbar-brand img {
     width: 112px;
   }
-  .navbar-links-right {
-    // padding-top: 8px;
-    a {
-      font-size: 16px;
-      color: white;
-      width: auto;
-    }
+  .navbar-links-right a {
+    font-size: 16px;
+    color: white;
+    width: auto;
   }
-}
-
-// Navbar hamburger related
-.navbar-portfolio {
-
   .navbar-collapse {
     flex-grow: 0;
-  }
-  // .navbar-toggler {
-  //   padding: 0;
-    // border: 1px solid $black;
-  //   .navbar-toggler-icon {
-  //     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  //   }
-  // }
-  .navbar-toggler {
-    // padding: 0;
-    // border: none;
-    // width: 25px;
-    // height: 16px;
-    // // display: flex;
-    // // flex-direction: column;
-    // // justify-content: space-around;
-    // margin: 0;
   }
 }
 
@@ -61,7 +36,6 @@
     .navbar-links-right .navbar-nav {
       flex-direction: column;
       align-items: center;
-      // Comment out above to revert back to non-hamburger navbar
     }
     button.navbar-toggler.collapsed {
       .bar {
@@ -73,28 +47,12 @@
           display: block;
           position: absolute;
           top: 8px;
+          opacity: 1;
         }
         &:last-child {
           transform: rotate(0deg);
           top: 16px;
         }
-        // &:first-child {
-        //   transform: rotate(0deg);
-        //   top: 0px;
-        //   left: 0px;
-        // }
-        // &:nth-child(2) {
-        //   display: block;
-        //   position: absolute;
-        //   top: 8px;
-        //   left: 0px;
-        //   width: 100%;
-        // }
-        // &:last-child {
-        //   transform: rotate(0deg);
-        //   top: 16px;
-        //   left: 0px;
-        // }
       }
     }
     button.navbar-toggler {
@@ -117,31 +75,13 @@
           top: 8px;
         }
         &:nth-child(2) {
-          display: none;
+          opacity: 0;
         }
         &:last-child {
           transform: rotate(45deg);
           position: absolute;
           top: 8px;
         }
-        // &:first-child {
-        //   transform: rotate(-70deg);
-        //   position: absolute;
-        //   top: 8px;
-        //   left: -4px;
-        // }
-        // &:nth-child(2) {
-        //   width: 10px;
-        //   position: absolute;
-        //   top: 12px;
-        //   left: 7px;
-        // }
-        // &:last-child {
-        //   transform: rotate(70deg);
-        //   position: absolute;
-        //   top: 8px;
-        //   right: -4px;
-        // }
       }
     }
   }
