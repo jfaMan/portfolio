@@ -9,7 +9,7 @@ gem 'middleman-livereload'
 gem 'rake'
 gem 'rubocop'
 
-gem 'font-awesome-sass', '~> 5.13.0'
+gem 'font-awesome-sass', '~> 6.4.0'
 
 group :test do
   gem 'capybara'
