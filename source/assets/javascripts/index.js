@@ -11,7 +11,7 @@ let preloaderImage = document.createElement('img');
 preloaderImage.src = imageUrl;
 
 const calculateDelay = (position) => {
-  const baseDelay = 1500;
+  const baseDelay = 1200;
   return position ? baseDelay - 700 + (position === 1 ? 0 : (500 * (position - 1))) : baseDelay;
 };
 
