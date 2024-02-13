@@ -1,3 +1,5 @@
+import 'bootstrap';
+
 const banner = document.querySelector('.banner__background');
 const bannerTextName = document.querySelector('.banner__text--name');
 const bannerTextHr = document.querySelector('.banner__text--hr');
