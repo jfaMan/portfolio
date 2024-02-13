@@ -1,37 +1,67 @@
 .banner {
-  background-size: cover;
-  background-position: center;
-  height: calc(100vh - 56px);
-  margin: 0 0 200px 0;
-  .banner-text {
+  position: relative;
+
+  &__background {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 56px);
+    margin: 0 0 200px 0;
+    transition: opacity 3s ease-out;
+  }
+
+  &__text-container {
     position: absolute;
     bottom: 10%;
     left: 8%;
-    h1 {
-      opacity: 1;
-      transition: opacity 2s linear;
+  }
+
+  &__text {
+    transition: opacity 2s linear;
+
+    &--name {
       font-size: 60px;
     }
-    h2 {
+
+    &--job-title {
       color: white;
       margin-top: 8px;
       font-size: 48px;
       font-weight: 300;
     }
   }
-}
-.arrow {
-  padding: 0 0 0 0;
-  position: absolute;
-  bottom: 38px;
-  left: 49%;
-  i {
-    cursor: pointer;
-    font-size: 24px;
-    color: black;
-    animation: hover 3S infinite;
-    animation-direction: alternate;
+
+  &__arrow {
+    padding: 0 0 0 0;
+    position: absolute;
+    bottom: 38px;
+    left: 49%;
+
+    i {
+      cursor: pointer;
+      font-size: 24px;
+      color: black;
+      animation: hover 3S infinite;
+      animation-direction: alternate;
+    }
   }
+
+  &__loading-icon-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-out;
+  }
+}
+
+.hide {
+  opacity: 0;
 }
 
 @keyframes hover {
@@ -39,18 +69,18 @@
   to { transform: translateY(150%); }
 }
 
-
-// Media Queries
 @media(max-width: 768px) {
   .banner {
-    .banner-text {
-      hr {
+    &__text {
+      &--hr {
         margin: 0;
       }
-      h1 {
+
+      &--name {
         font-size: 48px;
       }
-      h2 {
+
+      &--job-title {
         font-size: 38px;
       }
     }
@@ -59,25 +89,33 @@
 
 @media(max-width: 575px) {
   .banner {
-    height: calc(100vh - 56px);
-    background-position: 63%;
-    margin: 0 0 200px 0;
-    .banner-text {
+    &__background {
+      height: calc(100vh - 56px);
+      background-position: 63%;
+      margin: 0 0 200px 0;
+    }
+
+    &__text-container {
       position: absolute;
       bottom: 14%;
       left: 3%;
-      h1 {
+    }
+
+    &__text {
+      &--name {
         font-size: 40px;
       }
-      h2 {
+
+      &__job-title {
         font-size: 32px;
       }
     }
-  }
-  .arrow {
-    padding: 0 0 0 0;
-    position: absolute;
-    bottom: 38px;
-    left: 49%;
+
+    &__arrow {
+      padding: 0 0 0 0;
+      position: absolute;
+      bottom: 38px;
+      left: 49%;
+    }
   }
 }
